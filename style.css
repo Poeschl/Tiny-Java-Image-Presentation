@@ -1,0 +1,165 @@
+html, body, div, span, object, iframe {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #222526;
+}
+
+tt {
+    font-family: Monaco, monospace;
+}
+
+.step {
+    width: 84vw;
+    height: 84vh;
+    padding: 8vh 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.step::before {
+    content: "";
+    background-image: url(images/dice_withoutshadow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    position: fixed;
+    top: 1.5rem;
+    right: 3rem;
+    height: 5rem;
+    width: 8vw;
+}
+.step::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100vw;
+    background-color: #5a0401;
+    margin-left: -8vw;
+    overflow: hidden;
+    margin-bottom: -4px;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color:#ffffff;
+    margin-top: 0;
+}
+
+a {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3.3em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.3rem;
+}
+
+p, .code {
+    font-size: 2rem;
+}
+
+ul,ol,dl {
+  font-size: 1.5rem;
+}
+
+li {
+    margin-bottom: .2ex;
+}
+
+li > ul {
+    margin-bottom: .5ex;
+}
+
+.code {
+    background-color: rgb(30, 0, 0);
+    padding: 1.5rem;
+    font-family: Monaco, monospace;
+    width: fit-content;
+}
+
+.code > span {
+    background-color: inherit;
+}
+
+.step.cover-class {
+    background-color: #222526;
+    background-size: 100% auto; 
+}
+
+.step.cover-class::before {
+    content: "";
+    background-image: url(images/slides-cover-cutout.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto; 
+    position: fixed;
+    top: unset;
+    right: unset;
+    height: 100vh;
+    width: 100vw;
+    margin-left: -8vw;
+    z-index: -10;
+}
+
+.step.cover-class::after {
+    content: none;
+}
+
+.step.cover-class img {
+    position: fixed;
+    right: 12vw;
+    height: 100vh;
+    width: fit-content;
+    z-index: -15;
+}
+
+.step.cover-class h1, .step.cover-class h2, .step.cover-class p {
+    max-width: 48%;
+}
+
+.step.cover-class h2 {
+    font-weight: normal;
+}
+
+.step.right-class > * {
+    max-width: 41.5vw;
+}
+
+.step.right-class img, .step.right-class .code {
+    position: fixed;
+    right: 8vw;
+    max-width: 49.5vw;
+}
+
+.step.full-slide-class img{
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+}
+
+
+.highlight .nt, .highlight .nl, .highlight .nf {
+    color: #c61616;
+}
