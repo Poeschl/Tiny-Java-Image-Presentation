@@ -85,11 +85,20 @@ ul,ol,dl {
 }
 
 li {
-    margin-bottom: .2ex;
+    margin-bottom: .8ex;
 }
 
 li > ul {
     margin-bottom: .5ex;
+}
+
+li > dl {
+    margin-top: .8ex;
+    margin-bottom: .8ex;
+}
+
+dl > dt {
+    margin-bottom: .8ex;
 }
 
 .code {
