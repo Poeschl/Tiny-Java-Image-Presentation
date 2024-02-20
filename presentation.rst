@@ -233,13 +233,10 @@ Final image Sizes:
 
 :class: right-class
 
-.. image:: images/jre-layers.png
-   :width: 800px
-
 Even smaller? ThinJar
 ---------------------
 
-* Spring Boot has a experimental Then Launcher project
+* Spring Boot has a experimental Thin Launcher project
 * Dependencies will get downloaded from maven central on first run
 * Requires internet connection
 * https://github.com/spring-projects-experimental/spring-boot-thin-launcher
